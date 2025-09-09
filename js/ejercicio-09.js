@@ -14,3 +14,18 @@
 10
 
  */
+let salto = 0;
+for (let i = 1; i <= 500; i++) {
+  if (i % 4 === 0) {
+    document.writeln("<br>" + i + " (Multiplo de 4)");
+  } else if (i % 9 === 0) {
+    document.writeln("<br>" + i + " (Multiplo de 9)");
+  } else {
+    document.writeln("<br>" + i);
+  }
+  salto += 1;
+  if (salto === 5) {
+    salto = 0;
+    document.writeln("<br>" + "---------------------");
+  }
+}
