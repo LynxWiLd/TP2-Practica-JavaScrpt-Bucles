@@ -8,4 +8,4 @@ for (let i = 0; i < texto.length; i++) {
         resultado += "-";
     }
 }
-document.write(resultado);
+document.writeln(resultado);
