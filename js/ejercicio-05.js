@@ -17,7 +17,7 @@ let numero = 0;
 let letra = "";
 
 do {
-  numero = prompt("Introduce un número de DNI");
+  numero = parseInt(prompt("Introduce un número de DNI"));
 
   if (isNaN(numero)) {
     alert("No es un número, inténtelo de nuevo.");

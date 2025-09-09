@@ -8,3 +8,14 @@
 123456
 ……
  */
+let numero = parseInt(prompt("Ingrese un número no mayor a 50:"));
+while (isNaN(numero) || numero < 1 || numero > 50) {
+    numero = parseInt(prompt("Entrada inválida. Por favor, ingrese un número no mayor a 50:"));
+}
+for (let i = 1; i <= numero; i++) { 
+  let resultado = "";
+  for (let j = 1; j <= i; j++) { 
+    resultado += j;
+  }
+  document.writeln(resultado + "<br>");
+}
